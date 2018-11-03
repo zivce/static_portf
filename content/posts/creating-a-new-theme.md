@@ -6,7 +6,6 @@ tags:
   - hugo
   - theme
   - html
-  - css
 categories:
   - Development
   - hugo
