@@ -1,19 +1,17 @@
-+++
-title = "(Hu)go Template Primer"
-description = ""
-tags = [
-    "go",
-    "golang",
-    "templates",
-    "themes",
-    "development",
-]
-date = "2014-04-02"
-categories = [
-    "Development",
-    "golang",
-]
-+++
+---
+title: (Hu)go Template Primer
+linktitle: hugo-template-primer
+date: '2014-04-02'
+tags:
+  - go
+  - golang
+  - templates
+  - themes
+  - development
+categories:
+  - Development
+  - golang
+---
 
 Hugo uses the excellent [go][] [html/template][gohtmltemplate] library for
 its template engine. It is an extremely lightweight engine that provides a very
