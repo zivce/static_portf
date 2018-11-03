@@ -1,0 +1,51 @@
+## Basic Configuration
+baseurl = "https://example.com/"
+languageCode = "en"
+staticDir = ["static"]
+title = "zivce"
+theme = "hyde-hyde"
+
+## Hugo Built-in Features
+# disqusShortname = "your-disqus-shortname"
+# googleAnalytics = "your-google-analytics-id"
+# enableRobotsTXT = true
+
+summarylength = 10
+
+paginate = 5
+
+## Site Settings
+[params]
+    author = "zivce"
+    title = "weblair"
+    description = "Two words. Serb. Web."
+    authorimage = "img/matrix-morpheus-512.png"
+    dateformat = "Jan 2, 2006"
+    highlightjs = true
+    highlightjsstyle = "github"
+    # please choose either GraphComment or Disqus
+    #GraphCommentId = "..."
+    
+    # Table of contents
+    # toc = "tocbot"
+
+## Social Accounts
+[params.social]
+    github = "zivce"
+    instagram = "zivcex"
+    linkedin = "zivce"
+    facebook = "zivce"
+    stackoverflow = "5999670/zivce"
+    email = "zivkovicmilos5@hotmail.com"
+
+## Main Menu
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "Portfolio"
+    identifier = "portfolio"
+    weight = 200
+    url = "/portfolio/"
