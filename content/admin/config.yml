@@ -1,15 +1,15 @@
 backend:
   name: git-gateway
-  branch: master 
+  branch: master
 media_folder: "static/img"
-public_folder: "/img" 
+public_folder: "/img"
 collections:
-  - name: "posts" 
+  - name: "posts"
     label: "Posts"
-    folder: "content/posts" 
-    create: true 
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
-    fields: 
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "posts" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Link Title", name: "linktitle", widget: "string" }
@@ -22,13 +22,18 @@ collections:
           default: ["DEVELOPMENT"],
         }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "portfolio" 
-    label: "Portfolio" 
-    folder: "content/portfolio" 
-    create: true 
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
-    fields: 
-    - { label: "Layout", name: "layout", widget: "hidden", default: "portfolio" }
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "content/portfolio"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "portfolio",
+        }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
