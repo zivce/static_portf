@@ -22,7 +22,7 @@ collections:
           default: ["DEVELOPMENT"],
         }
       - { label: "Body", name: "body", widget: "markdown" }
-- name: "portfolio" 
+    - name: "portfolio" 
     label: "Portfolio" 
     folder: "content/portfolio" 
     create: true 
