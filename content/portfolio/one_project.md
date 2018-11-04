@@ -2,7 +2,7 @@
 title: "DERA"
 description: "Dynamic Event-Driven Actors"
 link: https://github.com/htr3n/dera
-screenshot: img/dera.png
+screenshot: ../img/dera.png
 date: "2018-06-21"
 layout: "portfolio"
 ---
