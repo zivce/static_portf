@@ -12,18 +12,19 @@ categories:
   - Development
   - golang
 ---
-
-Hugo uses the excellent [go][] [html/template][gohtmltemplate] library for
+Hugo uses the excellent [go](http://golang.org/) [html/template](http://golang.org/pkg/html/template/) library for
 its template engine. It is an extremely lightweight engine that provides a very
 small amount of logic. In our experience that it is just the right amount of
 logic to be able to create a good static website. If you have used other
 template systems from different languages or frameworks you will find a lot of
 similarities in go templates.
 
-This document is a brief primer on using go templates. The [go docs][gohtmltemplate]
+This document is a brief primer on using go templates. The [go docs](http://golang.org/pkg/html/template/)
 provide more details.
 
 ## Introduction to Go Templates
+
+![](/img/game-shooter.png)
 
 Go templates provide an extremely simple template language. It adheres to the
 belief that only the most basic of logic belongs in the template or view layer.
@@ -31,7 +32,7 @@ One consequence of this simplicity is that go templates parse very quickly.
 
 A unique characteristic of go templates is they are content aware. Variables and
 content will be sanitized depending on the context of where they are used. More
-details can be found in the [go docs][gohtmltemplate].
+details can be found in the [go docs](http://golang.org/pkg/html/template/).
 
 ## Basic Syntax
 
@@ -42,23 +43,31 @@ functions.
 
 Accessing a predefined variable "foo":
 
-    {{ foo }}
+```
+{{ foo }}
+```
 
 **Parameters are separated using spaces**
 
 Calling the add function with input of 1, 2:
 
-    {{ add 1 2 }}
+```
+{{ add 1 2 }}
+```
 
 **Methods and fields are accessed via dot notation**
 
 Accessing the Page Parameter "bar"
 
-    {{ .Params.bar }}
+```
+{{ .Params.bar }}
+```
 
 **Parentheses can be used to group items together**
 
-    {{ if or (isset .Params "alt") (isset .Params "caption") }} Caption {{ end }}
+```
+{{ if or (isset .Params "alt") (isset .Params "caption") }} Caption {{ end }}
+```
 
 ## Variables
 
@@ -69,12 +78,16 @@ page you are rendering. More details are available on the
 
 A variable is accessed by referencing the variable name.
 
-    <title>{{ .Title }}</title>
+```
+<title>{{ .Title }}</title>
+```
 
 Variables can also be defined and referenced.
 
-    {{ $address := "123 Main St."}}
-    {{ $address }}
+```
+{{ $address := "123 Main St."}}
+{{ $address }}
+```
 
 ## Functions
 
@@ -88,7 +101,9 @@ functions cannot be added without recompiling hugo.
 
 **Example:**
 
-    {{ add 1 2 }}
+```
+{{ add 1 2 }}
+```
 
 ## Includes
 
@@ -99,7 +114,9 @@ the /layout/ directory within Hugo.
 
 **Example:**
 
-    {{ template "chrome/header.html" . }}
+```
+{{ template "chrome/header.html" . }}
+```
 
 ## Logic
 
@@ -113,22 +130,28 @@ range.
 
 **Example 1: Using Context**
 
-    {{ range array }}
-        {{ . }}
-    {{ end }}
+```
+{{ range array }}
+    {{ . }}
+{{ end }}
+```
 
 **Example 2: Declaring value variable name**
 
-    {{range $element := array}}
-        {{ $element }}
-    {{ end }}
+```
+{{range $element := array}}
+    {{ $element }}
+{{ end }}
+```
 
 **Example 2: Declaring key and value variable name**
 
-    {{range $index, $element := array}}
-        {{ $index }}
-        {{ $element }}
-    {{ end }}
+```
+{{range $index, $element := array}}
+    {{ $index }}
+    {{ $element }}
+{{ end }}
+```
 
 ### Conditionals
 
@@ -137,25 +160,31 @@ logic in Go Templates. Like range, each statement is closed with `end`.
 
 Go Templates treat the following values as false:
 
-- false
-- 0
-- any array, slice, map, or string of length zero
+* false
+* 0
+* any array, slice, map, or string of length zero
 
 **Example 1: If**
 
-    {{ if isset .Params "title" }}<h4>{{ index .Params "title" }}</h4>{{ end }}
+```
+{{ if isset .Params "title" }}<h4>{{ index .Params "title" }}</h4>{{ end }}
+```
 
 **Example 2: If -> Else**
 
-    {{ if isset .Params "alt" }}
-        {{ index .Params "alt" }}
-    {{else}}
-        {{ index .Params "caption" }}
-    {{ end }}
+```
+{{ if isset .Params "alt" }}
+    {{ index .Params "alt" }}
+{{else}}
+    {{ index .Params "caption" }}
+{{ end }}
+```
 
 **Example 3: And & Or**
 
-    {{ if and (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr")}}
+```
+{{ if and (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr")}}
+```
 
 **Example 4: With**
 
@@ -165,15 +194,19 @@ and skips the block if the variable is absent.
 
 The first example above could be simplified as:
 
-    {{ with .Params.title }}<h4>{{ . }}</h4>{{ end }}
+```
+{{ with .Params.title }}<h4>{{ . }}</h4>{{ end }}
+```
 
 **Example 5: If -> Else If**
 
-    {{ if isset .Params "alt" }}
-        {{ index .Params "alt" }}
-    {{ else if isset .Params "caption" }}
-        {{ index .Params "caption" }}
-    {{ end }}
+```
+{{ if isset .Params "alt" }}
+    {{ index .Params "alt" }}
+{{ else if isset .Params "caption" }}
+    {{ index .Params "caption" }}
+{{ end }}
+```
 
 ## Pipes
 
@@ -191,32 +224,42 @@ A few simple examples should help convey how to use the pipe.
 
 **Example 1 :**
 
-    {{ if eq 1 1 }} Same {{ end }}
+```
+{{ if eq 1 1 }} Same {{ end }}
+```
 
 is the same as
 
-    {{ eq 1 1 | if }} Same {{ end }}
+```
+{{ eq 1 1 | if }} Same {{ end }}
+```
 
 It does look odd to place the if at the end, but it does provide a good
 illustration of how to use the pipes.
 
 **Example 2 :**
 
-    {{ index .Params "disqus_url" | html }}
+```
+{{ index .Params "disqus_url" | html }}
+```
 
 Access the page parameter called "disqus_url" and escape the HTML.
 
 **Example 3 :**
 
-    {{ if or (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr")}}
-    Stuff Here
-    {{ end }}
+```
+{{ if or (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr")}}
+Stuff Here
+{{ end }}
+```
 
 Could be rewritten as
 
-    {{  isset .Params "caption" | or isset .Params "title" | or isset .Params "attr" | if }}
-    Stuff Here
-    {{ end }}
+```
+{{  isset .Params "caption" | or isset .Params "title" | or isset .Params "attr" | if }}
+Stuff Here
+{{ end }}
+```
 
 ## Context (aka. the dot)
 
@@ -230,10 +273,12 @@ instead of depending on the context.
 
 **Example:**
 
-      {{ $title := .Site.Title }}
-      {{ range .Params.tags }}
-        <li> <a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a> - {{ $title }} </li>
-      {{ end }}
+```
+  {{ $title := .Site.Title }}
+  {{ range .Params.tags }}
+    <li> <a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a> - {{ $title }} </li>
+  {{ end }}
+```
 
 Notice how once we have entered the loop the value of {{ . }} has changed. We
 have defined a variable outside of the loop so we have access to it from within
@@ -273,11 +318,13 @@ notoc: true
 
 Here is the corresponding code inside of the template:
 
-      {{ if not .Params.notoc }}
-        <div id="toc" class="well col-md-4 col-sm-6">
-        {{ .TableOfContents }}
-        </div>
-      {{ end }}
+```
+  {{ if not .Params.notoc }}
+    <div id="toc" class="well col-md-4 col-sm-6">
+    {{ .TableOfContents }}
+    </div>
+  {{ end }}
+```
 
 ## Using Site (config) Parameters
 
@@ -328,6 +375,3 @@ so, such as in this example:
   {{end}}</ul>
 </nav>
 ```
-
-[go]: http://golang.org/
-[gohtmltemplate]: http://golang.org/pkg/html/template/
