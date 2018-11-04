@@ -1,11 +1,14 @@
 ---
-author: "Michael Henderson"
-date: 2014-09-28
+title: qweq
 linktitle: Creating a New Theme
-title: Creating a New Theme
-categories: [ "Development", "hugo" ]
-tags: ["hugo", "theme", "html", "css"]
-weight: 10
+date: 2014-09-28T00:00:00.000Z
+tags:
+  - hugo
+  - theme
+  - html
+categories:
+  - Development
+  - hugo
 ---
 
 
