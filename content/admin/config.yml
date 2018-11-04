@@ -1,15 +1,15 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/img" # The src attribute for uploaded media will begin with /images/uploads
+  branch: master 
+media_folder: "static/img"
+public_folder: "/img" 
 collections:
-  - name: "posts" # Used in routes, e.g., /admin/collections/blog
-    label: "Posts" # Used in the UI
-    folder: "content/posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: "posts" 
+    label: "Posts"
+    folder: "content/posts" 
+    create: true 
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
+    fields: 
       - { label: "Layout", name: "layout", widget: "hidden", default: "posts" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Link Title", name: "linktitle", widget: "string" }
@@ -21,4 +21,17 @@ collections:
           widget: "list",
           default: ["DEVELOPMENT"],
         }
+      - { label: "Body", name: "body", widget: "markdown" }
+- name: "portfolio" 
+    label: "Portfolio" 
+    folder: "content/portfolio" 
+    create: true 
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
+    fields: 
+    - { label: "Layout", name: "layout", widget: "hidden", default: "portfolio" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Screenshot", name: "screenshot", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
