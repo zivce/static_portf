@@ -1,7 +1,7 @@
 ## Basic Configuration
 baseurl = "https://epic-leakey-f03e94.netlify.com/"
 languageCode = "en"
-staticDir = ["static"]
+staticDir = ["static", "content/portfolio/img"]
 title = "zivce"
 theme = "hyde-hyde"
 
