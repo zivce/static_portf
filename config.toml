@@ -1,5 +1,5 @@
 ## Basic Configuration
-baseurl = "https://epic-leakey-f03e94.netlify.com/"
+baseurl = "https://zivcex.netlify.com/"
 languageCode = "en"
 staticDir = ["static", "portfolio"]
 title = "zivce"
