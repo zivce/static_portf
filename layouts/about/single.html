@@ -1,0 +1,22 @@
+{{ define "header" }}
+{{ partial "header.html" . }}
+{{ end }}
+{{ define "content" }}
+<div class="post">
+    <ul class="about__life-event-list">
+        {{range .Params.lifeEvents}}
+        <li class="about__life-event">
+            <div class="about__bullet">
+            </div>
+            <span>
+                {{.}}
+            </span>
+        </li>
+        {{end}}
+    </ul>
+</div>
+{{ end }}
+
+{{ define "footer" }}
+{{ partial "footer/font-awesome-js.html" . }}
+{{ end }}
