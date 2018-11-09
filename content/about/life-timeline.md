@@ -1,7 +1,7 @@
 ---
 title: Life Timeline
 lifeEvents:
-  - Still hustling...
+  - Still hustling bro...
   - Parties at dorm...
   - Worked with one of the Fortune 500 company
   - Got internship for the summer
@@ -23,5 +23,6 @@ lifeEvents:
   - Hard work through childhood on farm
   - Touched computer somewhere here
   - Started crushing toys around 2000
-  - Born on 5th of November, 1996
+  - Born on 5th of November 1996
 ---
+
