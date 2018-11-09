@@ -46,3 +46,14 @@ collections:
           default: true,
         }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "about"
+    label: "Life Timeline"
+    folder: "content/about"
+    fields:
+      - {
+        label: "Layout",
+        name: "layout",
+        widget: "hidden",
+        default: "portfolio",
+      }
+      - { label: "life events", name: "lifeEvents", widget: "list" }
