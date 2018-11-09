@@ -56,4 +56,5 @@ collections:
         widget: "hidden",
         default: "portfolio",
       }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "life events", name: "lifeEvents", widget: "list" }
