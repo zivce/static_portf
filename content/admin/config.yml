@@ -47,14 +47,13 @@ collections:
         }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "life timeline"
-      label: "Life timeline"
-      folder: "content/about"
-      fields:
-        - {
-            label: "Layout",
-            name: "layout",
-            widget: "hidden",
-            default: "life timeline",
-          }
-        - { label: "life events", name: "lifeEvents", widget: "list" }
-       
+    label: "Life timeline"
+    folder: "content/about"
+    fields:
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "life timeline",
+        }
+      - { label: "life events", name: "lifeEvents", widget: "list" }
