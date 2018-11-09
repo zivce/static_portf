@@ -50,10 +50,4 @@ collections:
     label: "Life timeline"
     folder: "content/about"
     fields:
-      - {
-          label: "Layout",
-          name: "layout",
-          widget: "hidden",
-          default: "life timeline",
-        }
       - { label: "life events", name: "lifeEvents", widget: "list" }
