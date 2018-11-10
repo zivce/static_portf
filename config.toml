@@ -49,3 +49,8 @@ paginate = 5
     identifier = "portfolio"
     weight = 200
     url = "/portfolio/"
+[[menu.main]]
+    name = "Life"
+    identifier = "life-timelin"
+    weight = 300
+    url = "/about/life-timeline"
