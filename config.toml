@@ -51,6 +51,6 @@ paginate = 5
     url = "/portfolio/"
 [[menu.main]]
     name = "Life"
-    identifier = "life-timelin"
+    identifier = "lifetimeline"
     weight = 300
-    url = "/about/life-timeline"
+    url = "/about/lifetimeline"

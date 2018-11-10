@@ -1,5 +1,7 @@
 ---
 title: Life Timeline
+type: about
+layout: lifetimeline
 lifeEvents:
   - Still hustling bro...
   - Parties at dorm...
