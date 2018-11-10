@@ -54,7 +54,7 @@ collections:
         label: "Layout",
         name: "layout",
         widget: "hidden",
-        default: "portfolio",
+        default: "lifetimeline",
       }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "life events", name: "lifeEvents", widget: "list" }
