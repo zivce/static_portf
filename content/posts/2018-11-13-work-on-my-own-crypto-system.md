@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Work on my own crypto system
+title: Crypto System
 linktitle: crypto-system-zivcex
 date: 2018-11-13T10:36:24.518Z
 tags:
