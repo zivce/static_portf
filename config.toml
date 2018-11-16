@@ -18,7 +18,7 @@ paginate = 5
 [params]
     author = "zivce"
     title = "weblair"
-    description = "Two words. Serb. Web."
+    description = "Serb. Code Enthusiast"
     authorimage = "img/matrix-morpheus-512.png"
     dateformat = "Jan 2, 2006"
     highlightjs = true
