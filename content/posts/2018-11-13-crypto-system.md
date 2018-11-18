@@ -16,4 +16,10 @@ Hello this is my first post! I got a project to build the crypto system that wil
 
 ## Implementation
 
-My implementation includes
+My implementation includes **Client**, **Library**, and **WCF Crypto Service. **As for client it includes the following classes. 
+
+![crypto-storage-class](/img/firsss.png)
+
+### Storage class
+
+This class is responsible for the collection of segments received from WCF service. It is an abstract class used to generate singletons for decrypted segments and for crypted segments. This class collects the segments and puts them in dictionary, and afterwards it is checked for collected segments.
