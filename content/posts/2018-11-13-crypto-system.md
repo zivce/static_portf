@@ -16,7 +16,7 @@ Hello this is my first post! I got a project to build the crypto system that wil
 
 ## Implementation
 
-My implementation includes **Client**, **Library**, and **WCF Crypto Service. **As for client it includes the following classes. 
+My implementation includes **Client**, **Library**, and WCF **Crypto Service**. As for client it includes the following classes. 
 
 ![crypto-storage-class](/img/firsss.png)
 
