@@ -33,3 +33,13 @@ This class is responsible for the collection of segments received from WCF servi
 ### File System Watcher
 
 I've used the FSW in my user controls that will propagate any change to the parent holding form. There are two user controls used for crypting and decrypting of files. When files are added to the crypt/decrypt queue the controls are updated with proper messages. Problems with FSW where that event handlers are called before the file is physically copied into the folder. So the system is still copying the contents of the file and my program starts reading it so I had to do `Thread.Sleep(100)` for it to be able to wait for files to get into the watched folder.
+
+**Update: 06/12/2018**
+
+- - -
+
+### Knapsack
+
+I've worked on Knapsack for my crypto system and for now I have string crypting and decrypting working. I am using a general and superincreasing knapsack to generate the public and private key as described in Information Security by Stamp. For parallelization I am using the `Parallel` class from `Threading` namespace. I am using integer array representation for each byte crypted.
+
+![Knapsack crypting and decrypting](/img/knapsack.png)
