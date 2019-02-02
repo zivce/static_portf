@@ -21,15 +21,15 @@ Today I will describe a project, that we did as part of faculty chores. It is ab
 
 ## Project Stack
 
-* Front-End
+* **Front-End**
   * Vue
   * Vuex
   * Jest
-* Back-End
+* **Back-End**
   * Laravel
   * MySQL
   * Apache
-* Utilities
+* **Utilities**
   * ESLint
   * Laravel-Mix
   * Vue-Router
