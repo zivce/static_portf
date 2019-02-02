@@ -8,7 +8,10 @@ tags:
   - laravel
   - trello
   - ethical hacking
-  - ''
+  - vuex
+  - vue-router
+  - apache
+  - mysql
 categories:
   - DEVELOPMENT
 ---
