@@ -1,0 +1,26 @@
+---
+layout: posts
+title: White Rose - Part II
+linktitle: pentesting-project-part-ii
+date: 2019-02-03T13:44:33.757Z
+tags:
+  - vue
+  - laravel
+  - trello
+  - ethical hacking
+  - vuex
+  - vue-router
+  - apache
+  - mysql
+categories:
+  - DEVELOPMENT
+---
+## Registration
+
+I will outline the basics of registration for pentester and client. Pentester has to enter some of the skills he posses and that will be shown after he bids on job. After the pentester has filled out the whole wizard form the page will refresh and wait for email to be confirmed. The app will inform the user of status of registration so far with vue-snotify notification.
+
+![pentester-registration](/img/pentester-registration.png "Pentester Registration")
+
+![vue-snotify-notification](/img/registration-success.png "Vue notifies user of registration success")
+
+## Pentester profile
