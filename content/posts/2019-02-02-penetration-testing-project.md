@@ -15,9 +15,7 @@ tags:
 categories:
   - DEVELOPMENT
 ---
-## Intro
-
-In few next posts I will describe a project, that we did as part of software engineering class. It is about _**ethical hacking**_, and it represents a platform on which pentesters connect with website owners. The team consisted of two Laravel developers and me.
+In few next posts I will describe a project, that we did as part of software engineering class. It is about **_ethical hacking_**, and it represents a platform on which pentesters connect with website owners. The team consisted of two Laravel developers and me.
 
 ## Project Stack
 
