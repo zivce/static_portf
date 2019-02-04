@@ -19,7 +19,7 @@ categories:
 
 Client can get to the dashboard after signing in, and check for various features that this app provides. The client can buy tokens with Stripe integrated into the application. For the credit card info I've used **vue-stripe-elements-plus**, for card input so one can add the desired tokens. To disable the accidents of buying the tokens twice I've decided to put event modifer to the pay button, so that user can click only once. The tokens amount is stored into **vuex ** so component can instantly update the user menu with received tokens after Stripe has completed the transaction.
 
-```js
+```javascript
 pay() {
      this.$validator.validateAll().then(isFormOk => {
        // used vee-validate for form validation
