@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on zivce</title>
+    <link>https://zivcex.netlify.com/tags/</link>
+    <description>Recent content in Tags on zivce</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Feb 2019 13:43:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://zivcex.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apache</title>
+      <link>https://zivcex.netlify.com/tags/apache/</link>
+      <pubDate>Mon, 04 Feb 2019 13:43:06 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C#</title>
+      <link>https://zivcex.netlify.com/tags/c/</link>
+      <pubDate>Tue, 13 Nov 2018 10:59:49 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ethical Hacking</title>
+      <link>https://zivcex.netlify.com/tags/ethical-hacking/</link>
+      <pubDate>Mon, 04 Feb 2019 13:43:06 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/ethical-hacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>File System Watcher</title>
+      <link>https://zivcex.netlify.com/tags/file-system-watcher/</link>
+      <pubDate>Tue, 13 Nov 2018 10:59:49 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/file-system-watcher/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Information Security</title>
+      <link>https://zivcex.netlify.com/tags/information-security/</link>
+      <pubDate>Tue, 13 Nov 2018 10:59:49 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/information-security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laravel</title>
+      <link>https://zivcex.netlify.com/tags/laravel/</link>
+      <pubDate>Mon, 04 Feb 2019 13:43:06 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/laravel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mysql</title>
+      <link>https://zivcex.netlify.com/tags/mysql/</link>
+      <pubDate>Mon, 04 Feb 2019 13:43:06 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Threading</title>
+      <link>https://zivcex.netlify.com/tags/threading/</link>
+      <pubDate>Tue, 13 Nov 2018 10:59:49 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/threading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trello</title>
+      <link>https://zivcex.netlify.com/tags/trello/</link>
+      <pubDate>Mon, 04 Feb 2019 13:43:06 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/trello/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vue</title>
+      <link>https://zivcex.netlify.com/tags/vue/</link>
+      <pubDate>Mon, 04 Feb 2019 13:43:06 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/vue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vue Router</title>
+      <link>https://zivcex.netlify.com/tags/vue-router/</link>
+      <pubDate>Mon, 04 Feb 2019 13:43:06 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/vue-router/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vuex</title>
+      <link>https://zivcex.netlify.com/tags/vuex/</link>
+      <pubDate>Mon, 04 Feb 2019 13:43:06 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/vuex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wcf</title>
+      <link>https://zivcex.netlify.com/tags/wcf/</link>
+      <pubDate>Tue, 13 Nov 2018 10:59:49 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/tags/wcf/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,61 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: "static/img"
+public_folder: "/img"
+publish_mode: editorial_workflow
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "posts" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link Title", name: "linktitle", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "list",
+          default: ["DEVELOPMENT"],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "content/portfolio"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "portfolio",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Screenshot", name: "screenshot", widget: "image" }
+      - {
+          label: "Featured",
+          name: "featured",
+          widget: "boolean",
+          default: true,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "about"
+    label: "Life Timeline"
+    folder: "content/about"
+    fields:
+      - {
+        label: "Layout",
+        name: "layout",
+        widget: "hidden",
+        default: "lifetimeline",
+      }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "life events", name: "lifeEvents", widget: "list" }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Information Security on zivce</title>
+    <link>https://zivcex.netlify.com/tags/information-security/</link>
+    <description>Recent content in Information Security on zivce</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Nov 2018 10:59:49 +0000</lastBuildDate>
+    
+	<atom:link href="https://zivcex.netlify.com/tags/information-security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Crypto System</title>
+      <link>https://zivcex.netlify.com/posts/2018-11-13-crypto-system/</link>
+      <pubDate>Tue, 13 Nov 2018 10:59:49 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/posts/2018-11-13-crypto-system/</guid>
+      <description>Intro Hello this is my first post! I got a project to build the crypto system that will watch one folder and crypt all files that are inside.</description>
+    </item>
+    
+  </channel>
+</rss>

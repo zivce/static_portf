@@ -35,6 +35,8 @@ In few next posts I will describe a project, that we did as part of software eng
 
 ![Lander](/img/lander.png "Project Landing Page")
 
+{{< img-shortcode imgurl="/img/lander.png" >}}
+
 ## App Idea
 
 We thought of building an app where pentesters can find job, and website owners or web developers can check their site for vulnerabilities. Clients can test their site on their own and attach that file when looking for pentester or to check the site on their own. Pentesters can find jobs easily and bid on them, the best of them will win clients' attention and get picked.

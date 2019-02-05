@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue Router on zivce</title>
+    <link>https://zivcex.netlify.com/tags/vue-router/</link>
+    <description>Recent content in Vue Router on zivce</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Feb 2019 13:43:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://zivcex.netlify.com/tags/vue-router/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>White Rose - Part III</title>
+      <link>https://zivcex.netlify.com/posts/2019-02-04-white-rose-part-iii/</link>
+      <pubDate>Mon, 04 Feb 2019 13:43:06 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/posts/2019-02-04-white-rose-part-iii/</guid>
+      <description>Client can get to the dashboard after signing in, and check for various features that this app provides.</description>
+    </item>
+    
+    <item>
+      <title>White Rose - Part II</title>
+      <link>https://zivcex.netlify.com/posts/2019-02-03-white-rose-part-ii/</link>
+      <pubDate>Sun, 03 Feb 2019 13:44:33 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/posts/2019-02-03-white-rose-part-ii/</guid>
+      <description>I will outline the basics of registration for pentester. Pentester has to enter some of the skills he posses and that will be shown after he bids on job.</description>
+    </item>
+    
+    <item>
+      <title>White Rose - Part I</title>
+      <link>https://zivcex.netlify.com/posts/2019-02-02-penetration-testing-project/</link>
+      <pubDate>Sat, 02 Feb 2019 21:15:46 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/posts/2019-02-02-penetration-testing-project/</guid>
+      <description>In few next posts I will describe a project, that we did as part of software engineering class.</description>
+    </item>
+    
+  </channel>
+</rss>

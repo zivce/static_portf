@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolios on zivce</title>
+    <link>https://zivcex.netlify.com/portfolio/</link>
+    <description>Recent content in Portfolios on zivce</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 Nov 2018 23:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zivcex.netlify.com/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Figure Destroyer</title>
+      <link>https://zivcex.netlify.com/portfolio/one_project/</link>
+      <pubDate>Sat, 03 Nov 2018 23:00:00 +0000</pubDate>
+      
+      <guid>https://zivcex.netlify.com/portfolio/one_project/</guid>
+      <description>This is a simple shooter game made in vanilla ES6, with help of RxJS.</description>
+    </item>
+    
+  </channel>
+</rss>
