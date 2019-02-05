@@ -36,16 +36,17 @@ pay() {
  }
 ```
 
-![user-dashboard](/img/info-user-menu-client.png "Client checking details of post job component")
+
+{{< img-shortcode imgurl="/img/info-user-menu-client.png" >}}
 
 The tokens amount is stored into **vuex** so component can instantly update the user menu with received tokens after Stripe has completed the transaction. For Stripe to function properly it is needed to put security token and amount and send it to the back-end. After transaction completes the tokens will be added to the balance of user and he can proceed to adding a new job if he navigates to post job component of application.
 
-![token-charger](/img/token-charger.png "Purchasing tokens as client")
+{{< img-shortcode imgurl="/img/token-charger.png" >}}
 
-![token-purchase-success](/img/token_purchase_success.png "Successful purchase of tokens")
+{{< img-shortcode imgurl="/img/token_purchase_success.png" >}}
 
 ## Brief user details
 
 User can navigate from the left side menu, to the brief details component, where he can check out what is current state of his account. Information shown is state of jobs, how many jobs are finished so far, how many jobs are started and how many are there in general. User can navigate to inbox, jobs, sites section by clicking on the icons. More about jobs, inbox and sites section in next post. 
 
-![client-profile-page](/img/profile-page.png "Brief user details")
+{{< img-shortcode imgurl="/img/profile-page.png" >}}
