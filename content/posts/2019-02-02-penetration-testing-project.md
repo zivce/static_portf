@@ -33,8 +33,6 @@ In few next posts I will describe a project, that we did as part of software eng
   * Vue-Router
   * Vue-Snotify
 
-![Lander](/img/lander.png "Project Landing Page")
-
 {{< img-shortcode imgurl="/img/lander.png" >}}
 
 ## App Idea
