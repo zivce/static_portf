@@ -15,9 +15,8 @@ tags:
 categories:
   - DEVELOPMENT
 ---
-![client-inbox](/img/client-inbox.png "Client Inbox")
-
-![client-pentester-inbox](/img/client-pentester-inbox.png "Client & Pentester Inbox")
+{{< img-shortcode imgurl="/img/client-inbox.png" >}}
+{{< img-shortcode imgurl="/img/client-pentester-inbox.png" >}}
 
 Messaging part is done with some Laravel logic and also some is done on the frontend. Message is sent to the backend but also added to binded array that is in data part of the component. Also after adding the message the input box is cleared immidately due to binding of that field to data.
 
@@ -48,7 +47,6 @@ Messaging part is done with some Laravel logic and also some is done on the fron
 ```
 
 After the job has been posted and some pentester applies the conversation is started between them. Client can put reviews for job done by pentester and rate the pentester all in conversation tab. The job can be declined if client is not satisfied with what has been done.
+{{< img-shortcode imgurl="/img/client-side-inbox-after-marked-as-completed.png" >}}
 
-![client-pentester-inbox-mark-as-completed](/img/client-side-inbox-after-marked-as-completed.png "Pentester finished the job")
-
-![Client-review](/img/client-reviewing-pentester.png "Client leaving review for pentester")
+{{< img-shortcode imgurl="/img/client-reviewing-pentester.png" >}}
