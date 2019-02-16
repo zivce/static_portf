@@ -15,6 +15,8 @@ tags:
 categories:
   - DEVELOPMENT
 ---
+![client-inbox](/img/client-inbox.png "Client Inbox")
+
 ![client-pentester-inbox](/img/client-pentester-inbox.png "Client & Pentester Inbox")
 
 Messaging part is done with some Laravel logic and also some is done on the frontend. Message is sent to the backend but also added to binded array that is in data part of the component. Also after adding the message the input box is cleared immidately due to binding of that field to data.
