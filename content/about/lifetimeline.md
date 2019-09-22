@@ -1,10 +1,9 @@
 ---
-title: Life Timeline
-type: about
 layout: lifetimeline
+title: Life Timeline
 lifeEvents:
-  - Still hustling bro...
-  - Parties at dorm...
+  - Coding @enjoyingwork
+  - Finished with exams at faculty
   - Worked with one of the Fortune 500 company
   - Got internship for the summer
   - Worked through third year
