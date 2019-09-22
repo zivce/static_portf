@@ -38,10 +38,10 @@ Tesla will be used for making the connection to API and Poison is used for JSON 
 
 ## Errors
 
-I had error with poison encoding, as it had to get the map for encoding decoding from API models. To resolve this problem I had to add function `Map.from_struct/2`:
+I had error with poison encoding, as it had to get the map for encoding decoding from API models. To resolve this problem I had to add function `Map.from_struct/2.`. If you are working with swagger-codegen this will make you some problems with API integration.
 
 ```ruby
-defmodule YouTubeData.Deserializer do
+ defmodule YouTubeData.Deserializer do
   @spec deserialize(struct(), :atom, :atom, struct(), keyword()) :: struct()
   def deserialize(model, field, :list, mod, options) do
     # adding Map.from_struct(mod) will resolve any decoding errors
