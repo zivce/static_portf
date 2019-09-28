@@ -49,6 +49,50 @@ info:
 
 Yaml file used to generate the api client had `File` model. That was the problem because it interfered with built-in model for File in Java. So I had to change the name to DriveFile. After generating the client stub you will see the Elixir struct create with the name DriveFile.
 
-### 
+### Facade
+
+To call the drive API I had to create a facade (I will probably rename it to service don't judge my naming!). Here is the snippet to call the Elixir Drive Client.
+
+```elixir
+
+# drive_facade.ex
+
+  file = %Drive.Model.DriveFile{
+          description: "Hello",
+          originalFilename: filename,
+          mimeType: "application/octet-stream",
+          name: filename
+        }
+        keyword_list = [{:uploadType, "multipart"}]
+        case drive_files_create(driveClient, file, filename, keyword_list) do
+          {:ok, resp} ->
+            resp |> inspect |> Logger.debug
+          {:error, error} ->
+            error |> inspect |> Logger.error
+        end
+    {:error, file_error} ->
+      file_error |> inspect |> Logger.error
+```
+
+```elixir
+# drive_files_create function
+
+   %{}
+    |> method(:post)
+    |> url("/files")
+# it is important to get the resource struct first
+    |> add_param(:body, :"resource", body)
+# after that comes the file
+    |> add_param(:file, :"media", file)
+    |> add_optional_params(optional_params, opts)
+    |> Enum.into([])
+    |> (&Connection.request(connection, &1)).()
+    |> decode(Drive.Model.DriveFile)
+
+```
+
+Generation of file part is not dynamic, I added that line directly into the client. What you need to do also is to change `%Drive.Model.DriveFile{}` to `Drive.Model.DriveFile`.
+
+That's all for now! More updates coming soon!
 
 
