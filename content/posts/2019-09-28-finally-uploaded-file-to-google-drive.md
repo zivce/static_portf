@@ -45,4 +45,10 @@ info:
   contact:
     name: Google
 ```
+### Open API Yaml
+
+Yaml file used to generate the api client had `File` model. That was the problem because it interfered with built-in model for File in Java. So I had to change the name to DriveFile. After generating the client stub you will see the Elixir struct create with the name DriveFile.
+
+### 
+
 
